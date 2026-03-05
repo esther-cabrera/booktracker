@@ -6,8 +6,12 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'ioc-angular-booktracker-EstherCabrera';
+
+  constructor() {
+    console.log('Aplicació BookTracker inicialitzada correctament');
+  }
 }
