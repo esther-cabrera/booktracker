@@ -2,5 +2,5 @@ export interface Element {
   id: number;
   nom: string;
   valor: number;
-  descripcio?: string; // propietat opcional
+  autor?: string; // propietat opcional
 }
