@@ -1,27 +1,36 @@
-# IocAngularBooktrackerEstherCabrera
+# BookTracker - Esther Cabrera
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+## Descripció
 
-## Development server
+BookTracker és una aplicació desenvolupada amb Angular que permet gestionar i organitzar els llibres personals de lectura.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+L'aplicació permetrà als usuaris:
 
-## Code scaffolding
+- Afegir llibres que volen llegir
+- Afegir llibres que estan llegint actualment
+- Registrar llibres que ja han llegit
+- Puntuar els llibres llegits
+- Afegir comentaris i valoracions personals
+- Compartir recomanacions de lectura
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## L'objectiu del projecte és crear una aplicació escalable que es pugui ampliar al llarg del curs.
 
-## Build
+## Stack Tècnic
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Aquest projecte utilitza:
 
-## Running unit tests
+- Angular 18
+- Standalone Components
+- Angular Router
+- SCSS (Sass)
+- Node.js
+- npm
+- Git i GitHub
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Estat del projecte
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Configuració inicial del projecte completada i verificada.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+L'estructura base de l'aplicació ha estat creada i el repositori Git està configurat amb les branques demanades.

@@ -1,0 +1,6 @@
+<app-barra-cerca (cerca)="filtrar($event)"></app-barra-cerca>
+
+<div class="llista">
+  <app-targeta-element *ngFor="let e of filtrats" [element]="e">
+  </app-targeta-element>
+</div>

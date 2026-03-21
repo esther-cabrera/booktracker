@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LlistaElementsComponent } from './components/llista-elements/llista-elements.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [LlistaElementsComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'ioc-angular-booktracker-EstherCabrera';
+
+  constructor() {
+    console.log('Aplicació BookTracker inicialitzada correctament');
+  }
 }
