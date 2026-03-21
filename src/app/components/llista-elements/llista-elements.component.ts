@@ -21,4 +21,8 @@ export class LlistaElementsComponent {
       e.nom.toLowerCase().includes(text.toLowerCase()),
     );
   }
+
+  trackById(index: number, item: any) {
+    return item.id;
+  }
 }

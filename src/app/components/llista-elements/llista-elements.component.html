@@ -1,6 +1,11 @@
 <app-barra-cerca (cerca)="filtrar($event)"></app-barra-cerca>
 
+<p *ngIf="filtrats.length === 0">No hi ha resultats</p>
+
 <div class="llista">
-  <app-targeta-element *ngFor="let e of filtrats" [element]="e">
+  <app-targeta-element
+    *ngFor="let e of filtrats; trackBy: trackById"
+    [element]="e"
+  >
   </app-targeta-element>
 </div>
