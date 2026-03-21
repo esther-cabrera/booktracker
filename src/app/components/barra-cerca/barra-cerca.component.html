@@ -1,2 +1,21 @@
-<input [(ngModel)]="text" placeholder="Buscar llibre..." />
-<button (click)="buscar()">Buscar</button>
+<form #f="ngForm">
+  <input
+    type="text"
+    name="cerca"
+    [(ngModel)]="text"
+    required
+    minlength="3"
+    #input="ngModel"
+    placeholder="Buscar llibre..."
+  />
+
+  <div *ngIf="input.invalid && input.touched">
+    <small *ngIf="input.errors?.['required']"> El camp és obligatori </small>
+
+    <small *ngIf="input.errors?.['minlength']"> Mínim 3 caràcters </small>
+  </div>
+
+  <button type="button" (click)="buscar()" [disabled]="f.invalid">
+    Buscar
+  </button>
+</form>
