@@ -17,3 +17,4 @@ export class BarraCercaComponent {
     this.cerca.emit(this.text);
   }
 }
+19a4e55 , 866f760
