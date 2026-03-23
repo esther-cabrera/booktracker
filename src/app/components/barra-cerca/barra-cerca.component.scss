@@ -2,11 +2,23 @@ input {
   margin-right: 10px;
 }
 
+button {
+  margin-right: 15px;
+}
+
+input:focus {
+  outline: 1.5px solid rgb(71, 71, 212);
+}
+
 input.ng-invalid.ng-touched {
-  border: 2px solid red;
+  border: 1.5px solid rgb(248, 74, 74);
 }
 
 input.ng-valid.ng-touched {
-  border: 2px solid green;
+  border: 1.5px solid rgb(117, 241, 117);
 }
 
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

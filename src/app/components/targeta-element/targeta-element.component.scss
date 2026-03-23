@@ -3,4 +3,9 @@
   padding: 15px;
   border-radius: 10px;
   background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.targeta:hover {
+  transform: scale(1.02);
 }

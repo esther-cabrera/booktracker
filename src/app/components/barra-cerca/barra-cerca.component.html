@@ -1,21 +1,36 @@
 <form #f="ngForm">
+  <label for="cerca">Buscar llibre:</label>
+
   <input
-    type="text"
+    id="cerca"
     name="cerca"
     [(ngModel)]="text"
     required
     minlength="3"
     #input="ngModel"
-    placeholder="Buscar llibre..."
+    aria-label="Cercador de llibres"
   />
 
-  <div *ngIf="input.invalid && input.touched">
+  <div *ngIf="input.invalid && input.touched" aria-live="assertive">
     <small *ngIf="input.errors?.['required']"> El camp és obligatori </small>
 
     <small *ngIf="input.errors?.['minlength']"> Mínim 3 caràcters </small>
   </div>
 
-  <button type="button" (click)="buscar()" [disabled]="f.invalid">
+  <button
+    type="button"
+    (click)="buscar()"
+    [disabled]="f.invalid"
+    aria-label="Botó de cerca"
+  >
     Buscar
+  </button>
+
+  <button
+    *ngIf="text"
+    (click)="text = ''; buscar()"
+    aria-label="Restablir cerca"
+  >
+    Reset
   </button>
 </form>

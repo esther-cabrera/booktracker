@@ -1,5 +1,6 @@
-<app-barra-cerca (cerca)="filtrar($event)"></app-barra-cerca>
-
+<div class="cerca">
+  <app-barra-cerca (cerca)="filtrar($event)"></app-barra-cerca>
+</div>
 <p *ngIf="filtrats.length === 0">No hi ha resultats</p>
 
 <div class="llista">
