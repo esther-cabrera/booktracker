@@ -1,12 +1,15 @@
-<div class="cerca">
-  <app-barra-cerca (cerca)="filtrar($event)"></app-barra-cerca>
-</div>
-<p *ngIf="filtrats.length === 0">No hi ha resultats</p>
+<app-barra-cerca></app-barra-cerca>
 
-<div class="llista">
-  <app-targeta-element
-    *ngFor="let e of filtrats; trackBy: trackById"
-    [element]="e"
-  >
+<div *ngIf="carregant()">
+  <p>Carregant...</p>
+</div>
+
+<div *ngIf="error()">
+  <p>{{ error() }}</p>
+  <button (click)="reintentar()">Reintentar</button>
+</div>
+
+<div *ngIf="!carregant() && !error()">
+  <app-targeta-element *ngFor="let e of elements()" [element]="e">
   </app-targeta-element>
 </div>
