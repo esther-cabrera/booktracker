@@ -1,7 +1,9 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
-
+import { ElementApiResponse } from '../models/element-api.model';
+import { ElementCataleg } from '../models/element-cataleg.model';
+import { adaptarElement } from '../adapters/element.adapter';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +11,7 @@ import { environment } from '../../environments/environment';
 export class ElementService {
   private http = inject(HttpClient);
 
-  private _elements = signal<any[]>([]);
+  private _elements = signal<ElementCataleg[]>([]);
   private _carregant = signal(false);
   private _error = signal<string | null>(null);
 
@@ -22,10 +24,11 @@ export class ElementService {
     this._error.set(null);
 
     this.http
-      .get<any[]>(`${environment.apiUrl}/elements?popular=true`)
+      .get<ElementApiResponse[]>(`${environment.apiUrl}/elements?popular=true`)
       .subscribe({
         next: (data) => {
-          this._elements.set(data);
+          const adaptats = data.map(adaptarElement);
+          this._elements.set(adaptats);
           this._carregant.set(false);
         },
         error: () => {
