@@ -1,0 +1,23 @@
+<form [formGroup]="formulari" class="formulari">
+  <input
+    type="text"
+    formControlName="termeCerca"
+    placeholder="Cerca llibres..."
+  />
+
+  <p *ngIf="termeCerca?.status === 'PENDING'">Validant...</p>
+
+  <div *ngIf="termeCerca?.touched || termeCerca?.dirty">
+    <p *ngIf="termeCerca?.errors?.['required']">El camp és obligatori</p>
+
+    <p *ngIf="termeCerca?.errors?.['minlength']">Mínim 2 caràcters</p>
+
+    <p *ngIf="termeCerca?.errors?.['maxlength']">Màxim 50 caràcters</p>
+
+    <p *ngIf="termeCerca?.errors?.['sensResultats']">No hi ha resultats</p>
+  </div>
+
+  <button type="button" *ngIf="termeCerca?.value" (click)="netejar()">
+    Netejar
+  </button>
+</form>

@@ -37,4 +37,23 @@ export class ElementService {
         },
       });
   }
+  cercar(terme: string) {
+    this._carregant.set(true);
+    this._error.set(null);
+
+    this.http
+      .get<
+        ElementApiResponse[]
+      >(`${environment.apiUrl}/elements?nom_like=${terme}`)
+      .subscribe({
+        next: (data) => {
+          this._elements.set(data);
+          this._carregant.set(false);
+        },
+        error: () => {
+          this._error.set('Error en la cerca');
+          this._carregant.set(false);
+        },
+      });
+  }
 }

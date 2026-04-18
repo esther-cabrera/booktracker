@@ -3,9 +3,9 @@
     {
       "id": 1,
       "nom": "El Quixot",
-      "descripcio": "Clàssic",
+      "descripcio": "Clàssic de la literatura espanyola",
       "categoria": "Novel·la",
-      "preu": 8.7,
+      "preu": 21.5,
       "imatge": "https://via.placeholder.com/150",
       "popular": true,
       "stock": 10
@@ -13,11 +13,91 @@
     {
       "id": 2,
       "nom": "1984",
-      "descripcio": "Distopia",
+      "descripcio": "Distopia política",
       "categoria": "Ciència ficció",
-      "preu": 9.2,
+      "preu": 12.95,
       "imatge": "https://via.placeholder.com/150",
       "popular": true,
+      "stock": 5
+    },
+    {
+      "id": 3,
+      "nom": "El nom del vent",
+      "descripcio": "Fantasia èpica",
+      "categoria": "Fantasia",
+      "preu": 18.1,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": true,
+      "stock": 8
+    },
+    {
+      "id": 4,
+      "nom": "La asistenta",
+      "descripcio": "Thriller psicològic",
+      "categoria": "Thriller",
+      "preu": 15.95,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": false,
+      "stock": 6
+    },
+    {
+      "id": 5,
+      "nom": "La casa dels esperits",
+      "descripcio": "Novel·la màgic-realista",
+      "categoria": "Drama",
+      "preu": 9.95,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": true,
+      "stock": 7
+    },
+    {
+      "id": 6,
+      "nom": "El día que se perdió la cordura",
+      "descripcio": "Intriga i misteri",
+      "categoria": "Thriller",
+      "preu": 12.12,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": false,
+      "stock": 4
+    },
+    {
+      "id": 7,
+      "nom": "El petit príncep",
+      "descripcio": "Conte filosòfic",
+      "categoria": "Infantil",
+      "preu": 7.5,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": true,
+      "stock": 12
+    },
+    {
+      "id": 8,
+      "nom": "El diari d'Anna Frank",
+      "descripcio": "Diari històric",
+      "categoria": "Història",
+      "preu": 10.95,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": false,
+      "stock": 9
+    },
+    {
+      "id": 9,
+      "nom": "El príncep de la boira",
+      "descripcio": "Misteri juvenil",
+      "categoria": "Fantasia",
+      "preu": 13.45,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": true,
+      "stock": 6
+    },
+    {
+      "id": 10,
+      "nom": "La metamorfosis",
+      "descripcio": "Relat existencial",
+      "categoria": "Clàssic",
+      "preu": 10,
+      "imatge": "https://via.placeholder.com/150",
+      "popular": false,
       "stock": 5
     }
   ]

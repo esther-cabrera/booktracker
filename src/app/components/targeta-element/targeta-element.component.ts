@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Element } from '../../models/element.model';
+import { ElementCataleg } from '../../models/element-cataleg.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./targeta-element.component.scss'],
 })
 export class TargetaElementComponent {
-  @Input() element!: Element;
+  @Input() element!: ElementCataleg;
 }
