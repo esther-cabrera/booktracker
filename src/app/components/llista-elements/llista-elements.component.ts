@@ -4,7 +4,7 @@ import { TargetaElementComponent } from '../targeta-element/targeta-element.comp
 import { BarraCercaComponent } from '../barra-cerca/barra-cerca.component';
 import { ElementService } from '../../services/element.service';
 import { FormulariCercaComponent } from '../formulari-cerca/formulari-cerca.component';
-
+import { PreferitsService } from '../../services/preferits.service';
 @Component({
   selector: 'app-llista-elements',
   standalone: true,
@@ -24,4 +24,7 @@ export class LlistaElementsComponent implements OnInit {
   reintentar() {
     this.elementService.obtenirPopulars();
   }
+
+  private preferitsService = inject(PreferitsService);
+  totalPreferits = this.preferitsService.totalPreferits;
 }

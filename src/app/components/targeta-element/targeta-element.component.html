@@ -1,5 +1,9 @@
 <article class="targeta">
+  <button (click)="togglePreferit()">
+    {{ esPreferit() ? "❤️" : "🤍" }}
+  </button>
+
   <h2>{{ element.nom | uppercase }}</h2>
   <p>{{ element.descripcio }}</p>
-  <p>Valoració: {{ element.preu }}</p>
+  <p>Preu: {{ element.preu }}€</p>
 </article>

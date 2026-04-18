@@ -1,5 +1,7 @@
 <app-formulari-cerca></app-formulari-cerca>
 
+<p class="comptador">Preferits: {{ totalPreferits() }}</p>
+
 <div *ngIf="carregant()">
   <p>Carregant...</p>
 </div>
@@ -9,7 +11,7 @@
   <button (click)="reintentar()">Reintentar</button>
 </div>
 
-<div *ngIf="!carregant() && !error()">
+<div *ngIf="!carregant() && !error()" class="grid-elements">
   <app-targeta-element *ngFor="let e of elements()" [element]="e">
   </app-targeta-element>
 </div>
