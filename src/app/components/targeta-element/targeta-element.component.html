@@ -1,9 +1,10 @@
 <article class="targeta">
-  <button (click)="togglePreferit()">
-    {{ esPreferit() ? "❤️" : "🤍" }}
-  </button>
+  <div class="grid-elements">
+    <h2>{{ element.nom }}</h2>
+    <p>{{ element.descripcio }}</p>
 
-  <h2>{{ element.nom | uppercase }}</h2>
-  <p>{{ element.descripcio }}</p>
-  <p>Preu: {{ element.preu }}€</p>
+    <button (click)="togglePreferit()">
+      {{ esPreferit() ? "❤️" : "🤍" }}
+    </button>
+  </div>
 </article>

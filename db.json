@@ -1,7 +1,7 @@
 {
   "elements": [
     {
-      "id": 1,
+      "id": "1",
       "nom": "El Quixot",
       "descripcio": "Clàssic de la literatura espanyola",
       "categoria": "Novel·la",
@@ -11,7 +11,7 @@
       "stock": 10
     },
     {
-      "id": 2,
+      "id": "2",
       "nom": "1984",
       "descripcio": "Distopia política",
       "categoria": "Ciència ficció",
@@ -21,7 +21,7 @@
       "stock": 5
     },
     {
-      "id": 3,
+      "id": "3",
       "nom": "El nom del vent",
       "descripcio": "Fantasia èpica",
       "categoria": "Fantasia",
@@ -31,7 +31,7 @@
       "stock": 8
     },
     {
-      "id": 4,
+      "id": "4",
       "nom": "La asistenta",
       "descripcio": "Thriller psicològic",
       "categoria": "Thriller",
@@ -41,7 +41,7 @@
       "stock": 6
     },
     {
-      "id": 5,
+      "id": "5",
       "nom": "La casa dels esperits",
       "descripcio": "Novel·la màgic-realista",
       "categoria": "Drama",
@@ -51,7 +51,7 @@
       "stock": 7
     },
     {
-      "id": 6,
+      "id": "6",
       "nom": "El día que se perdió la cordura",
       "descripcio": "Intriga i misteri",
       "categoria": "Thriller",
@@ -61,7 +61,7 @@
       "stock": 4
     },
     {
-      "id": 7,
+      "id": "7",
       "nom": "El petit príncep",
       "descripcio": "Conte filosòfic",
       "categoria": "Infantil",
@@ -71,7 +71,7 @@
       "stock": 12
     },
     {
-      "id": 8,
+      "id": "8",
       "nom": "El diari d'Anna Frank",
       "descripcio": "Diari històric",
       "categoria": "Història",
@@ -81,7 +81,7 @@
       "stock": 9
     },
     {
-      "id": 9,
+      "id": "9",
       "nom": "El príncep de la boira",
       "descripcio": "Misteri juvenil",
       "categoria": "Fantasia",
@@ -91,7 +91,7 @@
       "stock": 6
     },
     {
-      "id": 10,
+      "id": "10",
       "nom": "La metamorfosis",
       "descripcio": "Relat existencial",
       "categoria": "Clàssic",

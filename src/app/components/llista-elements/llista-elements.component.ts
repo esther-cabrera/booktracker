@@ -5,10 +5,17 @@ import { BarraCercaComponent } from '../barra-cerca/barra-cerca.component';
 import { ElementService } from '../../services/element.service';
 import { FormulariCercaComponent } from '../formulari-cerca/formulari-cerca.component';
 import { PreferitsService } from '../../services/preferits.service';
+import { PreferitsPanelComponent } from '../preferits-panel/preferits-panel.component';
+
 @Component({
   selector: 'app-llista-elements',
   standalone: true,
-  imports: [CommonModule, TargetaElementComponent, FormulariCercaComponent],
+  imports: [
+    CommonModule,
+    TargetaElementComponent,
+    FormulariCercaComponent,
+    PreferitsPanelComponent,
+  ],
   templateUrl: './llista-elements.component.html',
 })
 export class LlistaElementsComponent implements OnInit {

@@ -1,0 +1,23 @@
+<form [formGroup]="formulari">
+  <div formArrayName="elements">
+    <div *ngFor="let e of elements.controls; let i = index" [formGroupName]="i">
+      <h3>
+        {{ preferits()[i]?.nom }}
+      </h3>
+
+      <div formArrayName="notes">
+        <div *ngFor="let nota of getNotes(i).controls; let j = index">
+          <input [formControlName]="j" placeholder="Escriu una nota" />
+
+          <button type="button" (click)="eliminarNota(i, j)">x</button>
+
+          <p *ngIf="(nota.touched || nota.dirty) && nota.errors?.['minlength']">
+            Mínim 3 caràcters
+          </p>
+        </div>
+      </div>
+
+      <button type="button" (click)="afegirNota(i)">+</button>
+    </div>
+  </div>
+</form>

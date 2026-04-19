@@ -2,7 +2,6 @@ import { Component, Input, inject } from '@angular/core';
 import { ElementCataleg } from '../../models/element-cataleg.model';
 import { CommonModule } from '@angular/common';
 import { PreferitsService } from '../../services/preferits.service';
-
 @Component({
   selector: 'app-targeta-element',
   standalone: true,
@@ -23,7 +22,7 @@ export class TargetaElementComponent {
     }
   }
 
-  esPreferit(): boolean {
+  esPreferit() {
     return this.preferitsService.esPreferit(this.element.id);
   }
 }

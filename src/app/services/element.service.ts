@@ -47,7 +47,9 @@ export class ElementService {
       >(`${environment.apiUrl}/elements?nom_like=${terme}`)
       .subscribe({
         next: (data) => {
-          this._elements.set(data);
+          const adaptats = data.map(adaptarElement);
+
+          this._elements.set(adaptats);
           this._carregant.set(false);
         },
         error: () => {

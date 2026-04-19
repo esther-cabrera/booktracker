@@ -4,4 +4,5 @@ export interface ElementCataleg {
   descripcio: string;
   preu: number;
   imatge: string;
+  notes?: string[];
 }

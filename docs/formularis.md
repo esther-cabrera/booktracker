@@ -21,3 +21,8 @@ S'ha implementat un 'debounceTime' de 400 ms sobre els canvis del camp. Això si
 
 Comportament general
 La cerca es realitza automàticament mentre l'usuari escriu (sense necessitat de botó). Si el camp és invàlid, no es fa cap cerca. Si el camp està buit, es mostren els elements populars.
+
+Exercici5:
+El component PreferitsPanelComponent utilitza un FormArray per gestionar les notes dels elements preferits. Cada element preferit té un conjunt de notes, i cada una d'aquestes és un FormControl amb validacions de camp obligatori i mínim 3 caràcters. Es poden afegir noves notes amb un botó “+” i eliminar-les amb un botó “x”.
+
+Aquest formulari és dinàmic perquè es forma en funció dels seleccionats com a preferit. A més, les notes es guarden automàticament al localStorage a través del servei de preferits, de manera que es mantenen encara que es recarregui la pàgina.
