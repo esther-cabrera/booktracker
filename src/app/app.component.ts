@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { LlistaElementsComponent } from './components/llista-elements/llista-elements.component';
-
+import { NavegacioComponent } from './components/navegacio/navegacio.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LlistaElementsComponent],
+  imports: [RouterOutlet, NavegacioComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'ioc-angular-booktracker-EstherCabrera';
