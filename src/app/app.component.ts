@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LlistaElementsComponent } from './components/llista-elements/llista-elements.component';
 import { NavegacioComponent } from './components/navegacio/navegacio.component';
 import { RouterOutlet } from '@angular/router';
 

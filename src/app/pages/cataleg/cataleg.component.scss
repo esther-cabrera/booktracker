@@ -1,0 +1,29 @@
+.llista {
+  display: grid;
+  gap: 15px;
+}
+
+//mòbil
+@media (max-width: 600px) {
+  .llista {
+    grid-template-columns: 1fr;
+  }
+}
+
+//tablet
+@media (min-width: 601px) and (max-width: 900px) {
+  .llista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+//escritpori
+@media (min-width: 901px) {
+  .llista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cerca {
+  margin-bottom: 20px;
+}
