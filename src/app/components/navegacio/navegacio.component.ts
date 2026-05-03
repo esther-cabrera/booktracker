@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-navegacio',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './navegacio.component.html',
-  styleUrl: './navegacio.component.scss',
 })
-export class NavegacioComponent {}
+export class NavegacioComponent {
+  private authService = inject(AuthService);
+
+  usuari$ = this.authService.obtenirUsuari();
+
+  logout() {
+    this.authService.logout();
+  }
+}
