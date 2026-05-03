@@ -1,36 +1,31 @@
-# BookTracker - Esther Cabrera
+BOOKTRACKER
 
-## Descripció
+Descripció
+Aquesta aplicació permet veure un catàleg de llibres, cercar-los i marcar-los com a preferits. També inclou un sistema de login per accedir a la secció de preferits.
 
-BookTracker és una aplicació desenvolupada amb Angular que permet gestionar i organitzar els llibres personals de lectura.
+Mapa de rutes
+| Ruta ------ | Component ------------- | Accés |
+| ----------- | ----------------------- | ------ |
+| / ----------| redirecció a cataleg ---| públic |
+| /cataleg -- | CatalegComponent -------| públic |
+| /cerca -----| CercaComponent ---------| públic |
+| /detall/:id | DetallComponent --------| públic |
+| /preferits -| PreferitsPanelComponent | privat |
+| /login -----| LoginComponent ---------| públic |
 
-L'aplicació permetrà als usuaris:
+Execució en local
+git clone https://github.com/esther-cabrera/booktracker
+cd booktracker
+npm install
+ng serve
 
-- Afegir llibres que volen llegir
-- Afegir llibres que estan llegint actualment
-- Registrar llibres que ja han llegit
-- Puntuar els llibres llegits
-- Afegir comentaris i valoracions personals
-- Compartir recomanacions de lectura
+Obrir: http://localhost:4200
 
-## L'objectiu del projecte és crear una aplicació escalable que es pugui ampliar al llarg del curs.
+Build de producció
+ng build --configuration production
 
-## Stack Tècnic
+El build genera els fitxers a la carpeta dist/ i mostra la mida dels fitxers a la terminal. També es pot veure que la ruta de preferits es carrega com a chunk separat (lazy loading).
 
-Aquest projecte utilitza:
-
-- Angular 18
-- Standalone Components
-- Angular Router
-- SCSS (Sass)
-- Node.js
-- npm
-- Git i GitHub
-
----
-
-## Estat del projecte
-
-Configuració inicial del projecte completada i verificada.
-
-L'estructura base de l'aplicació ha estat creada i el repositori Git està configurat amb les branques demanades.
+Credencials de prova
+Email: admin@test.com
+Password: 1234

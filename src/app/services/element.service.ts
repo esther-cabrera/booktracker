@@ -77,4 +77,7 @@ export class ElementService {
         },
       });
   }
+  netejar() {
+    this._elements.set([]);
+  }
 }

@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ElementService } from '../../services/element.service';
+import { TargetaElementComponent } from '../../components/targeta-element/targeta-element.component';
+import { FormulariCercaComponent } from '../../components/formulari-cerca/formulari-cerca.component';
 
 @Component({
   selector: 'app-cerca',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, FormulariCercaComponent, TargetaElementComponent],
   templateUrl: './cerca.component.html',
-  styleUrl: './cerca.component.scss'
 })
 export class CercaComponent {
+  private elementService = inject(ElementService);
 
+  elements = this.elementService.elements;
+  carregant = this.elementService.carregant;
+  error = this.elementService.error;
 }

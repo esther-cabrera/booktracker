@@ -42,7 +42,7 @@ export class FormulariCercaComponent implements OnInit {
       if (this.termeCerca?.invalid) return;
 
       if (!valor) {
-        this.elementService.obtenirPopulars();
+        this.elementService.netejar();
       } else {
         this.elementService.cercar(valor);
       }

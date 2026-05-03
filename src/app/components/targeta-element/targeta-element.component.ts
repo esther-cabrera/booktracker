@@ -7,11 +7,12 @@ import {
 import { ElementCataleg } from '../../models/element-cataleg.model';
 import { CommonModule } from '@angular/common';
 import { PreferitsService } from '../../services/preferits.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-targeta-element',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './targeta-element.component.html',
   styleUrls: ['./targeta-element.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

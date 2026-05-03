@@ -1,1 +1,9 @@
-<p>Detall de l’element amb id: {{ id }}</p>
+<div *ngIf="element; else loading">
+  <h2>{{ element.nom }}</h2>
+  <p>{{ element.descripcio }}</p>
+  <p>Preu: {{ element.preu }} €</p>
+</div>
+
+<ng-template #loading>
+  <p>Carregant...</p>
+</ng-template>

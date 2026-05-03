@@ -1,5 +1,5 @@
 export interface ElementCataleg {
-  id: string;
+  id: number;
   nom: string;
   descripcio: string;
   preu: number;
