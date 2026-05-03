@@ -1,102 +1,510 @@
 {
   "elements": [
     {
-      "id": "1",
+      "id": 1,
       "nom": "El Quixot",
       "descripcio": "Clàssic de la literatura espanyola",
-      "categoria": "Novel·la",
-      "preu": 21.5,
-      "imatge": "https://via.placeholder.com/150",
+      "categoria": "novel·la",
+      "preu": 12.5,
+      "imatge": "img1.jpg",
       "popular": true,
       "stock": 10
     },
     {
-      "id": "2",
+      "id": 2,
       "nom": "1984",
       "descripcio": "Distopia política",
-      "categoria": "Ciència ficció",
-      "preu": 12.95,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": true,
-      "stock": 5
-    },
-    {
-      "id": "3",
-      "nom": "El nom del vent",
-      "descripcio": "Fantasia èpica",
-      "categoria": "Fantasia",
-      "preu": 18.1,
-      "imatge": "https://via.placeholder.com/150",
+      "categoria": "novel·la",
+      "preu": 10.0,
+      "imatge": "img2.jpg",
       "popular": true,
       "stock": 8
     },
     {
-      "id": "4",
-      "nom": "La asistenta",
-      "descripcio": "Thriller psicològic",
-      "categoria": "Thriller",
-      "preu": 15.95,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": false,
-      "stock": 6
+      "id": 3,
+      "nom": "El nom del vent",
+      "descripcio": "Fantasia èpica",
+      "categoria": "fantasia",
+      "preu": 15.0,
+      "imatge": "img3.jpg",
+      "popular": true,
+      "stock": 5
     },
     {
-      "id": "5",
+      "id": 4,
       "nom": "La casa dels esperits",
-      "descripcio": "Novel·la màgic-realista",
-      "categoria": "Drama",
-      "preu": 9.95,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": true,
+      "descripcio": "Drama familiar",
+      "categoria": "novel·la",
+      "preu": 11.0,
+      "imatge": "img4.jpg",
+      "popular": false,
       "stock": 7
     },
     {
-      "id": "6",
-      "nom": "El día que se perdió la cordura",
-      "descripcio": "Intriga i misteri",
-      "categoria": "Thriller",
-      "preu": 12.12,
-      "imatge": "https://via.placeholder.com/150",
+      "id": 5,
+      "nom": "La metamorfosi",
+      "descripcio": "Relat existencial",
+      "categoria": "clàssic",
+      "preu": 8.0,
+      "imatge": "img5.jpg",
       "popular": false,
-      "stock": 4
-    },
-    {
-      "id": "7",
-      "nom": "El petit príncep",
-      "descripcio": "Conte filosòfic",
-      "categoria": "Infantil",
-      "preu": 7.5,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": true,
       "stock": 12
     },
+
     {
-      "id": "8",
-      "nom": "El diari d'Anna Frank",
-      "descripcio": "Diari històric",
-      "categoria": "Història",
-      "preu": 10.95,
-      "imatge": "https://via.placeholder.com/150",
+      "id": 6,
+      "nom": "Dràcula",
+      "descripcio": "Novel·la de terror gòtic",
+      "categoria": "terror",
+      "preu": 9.5,
+      "imatge": "img6.jpg",
+      "popular": true,
+      "stock": 6
+    },
+    {
+      "id": 7,
+      "nom": "Frankenstein",
+      "descripcio": "Ciència i horror",
+      "categoria": "terror",
+      "preu": 9.0,
+      "imatge": "img7.jpg",
       "popular": false,
       "stock": 9
     },
     {
-      "id": "9",
-      "nom": "El príncep de la boira",
-      "descripcio": "Misteri juvenil",
-      "categoria": "Fantasia",
-      "preu": 13.45,
-      "imatge": "https://via.placeholder.com/150",
+      "id": 8,
+      "nom": "Orgull i prejudici",
+      "descripcio": "Romàntica clàssica",
+      "categoria": "romanç",
+      "preu": 10.5,
+      "imatge": "img8.jpg",
+      "popular": true,
+      "stock": 4
+    },
+    {
+      "id": 9,
+      "nom": "Moby Dick",
+      "descripcio": "Aventura marítima",
+      "categoria": "aventura",
+      "preu": 13.0,
+      "imatge": "img9.jpg",
+      "popular": false,
+      "stock": 3
+    },
+    {
+      "id": 10,
+      "nom": "Hamlet",
+      "descripcio": "Tragèdia de Shakespeare",
+      "categoria": "teatre",
+      "preu": 7.5,
+      "imatge": "img10.jpg",
+      "popular": true,
+      "stock": 10
+    },
+
+    {
+      "id": 11,
+      "nom": "El Hobbit",
+      "descripcio": "Fantasia clàssica",
+      "categoria": "fantasia",
+      "preu": 14.0,
+      "imatge": "img11.jpg",
       "popular": true,
       "stock": 6
     },
     {
-      "id": "10",
-      "nom": "La metamorfosis",
-      "descripcio": "Relat existencial",
-      "categoria": "Clàssic",
-      "preu": 10,
-      "imatge": "https://via.placeholder.com/150",
+      "id": 12,
+      "nom": "El Senyor dels Anells",
+      "descripcio": "Saga èpica",
+      "categoria": "fantasia",
+      "preu": 25.0,
+      "imatge": "img12.jpg",
+      "popular": true,
+      "stock": 2
+    },
+    {
+      "id": 13,
+      "nom": "El Petit Príncep",
+      "descripcio": "Conte filosòfic",
+      "categoria": "infantil",
+      "preu": 8.5,
+      "imatge": "img13.jpg",
+      "popular": true,
+      "stock": 15
+    },
+    {
+      "id": 14,
+      "nom": "Don Juan Tenorio",
+      "descripcio": "Teatre romàntic",
+      "categoria": "teatre",
+      "preu": 7.0,
+      "imatge": "img14.jpg",
+      "popular": false,
+      "stock": 5
+    },
+    {
+      "id": 15,
+      "nom": "Crim i càstig",
+      "descripcio": "Novel·la psicològica",
+      "categoria": "novel·la",
+      "preu": 12.0,
+      "imatge": "img15.jpg",
+      "popular": true,
+      "stock": 6
+    },
+
+    {
+      "id": 16,
+      "nom": "Anna Karenina",
+      "descripcio": "Drama romàntic",
+      "categoria": "novel·la",
+      "preu": 13.5,
+      "imatge": "img16.jpg",
+      "popular": false,
+      "stock": 4
+    },
+    {
+      "id": 17,
+      "nom": "Els Miserables",
+      "descripcio": "Novel·la social",
+      "categoria": "novel·la",
+      "preu": 16.0,
+      "imatge": "img17.jpg",
+      "popular": true,
+      "stock": 3
+    },
+    {
+      "id": 18,
+      "nom": "El retrat de Dorian Gray",
+      "descripcio": "Filosofia i bellesa",
+      "categoria": "clàssic",
+      "preu": 9.5,
+      "imatge": "img18.jpg",
+      "popular": false,
+      "stock": 8
+    },
+    {
+      "id": 19,
+      "nom": "La Odisea",
+      "descripcio": "Èpica grega",
+      "categoria": "clàssic",
+      "preu": 11.0,
+      "imatge": "img19.jpg",
+      "popular": true,
+      "stock": 7
+    },
+    {
+      "id": 20,
+      "nom": "La Ilíada",
+      "descripcio": "Guerra de Troia",
+      "categoria": "clàssic",
+      "preu": 11.5,
+      "imatge": "img20.jpg",
+      "popular": false,
+      "stock": 6
+    },
+    {
+      "id": 21,
+      "nom": "El temor d'un home savi",
+      "descripcio": "Segona part fantasia èpica",
+      "categoria": "novel·la",
+      "preu": 15.0,
+      "imatge": "img21.jpg",
+      "popular": true,
+      "stock": 10
+    },
+    {
+      "id": 22,
+      "nom": "El joc de l'àngel",
+      "descripcio": "Misteri i literatura",
+      "categoria": "novel·la",
+      "preu": 13.0,
+      "imatge": "img22.jpg",
+      "popular": false,
+      "stock": 6
+    },
+    {
+      "id": 23,
+      "nom": "Inferno",
+      "descripcio": "Thriller de Dan Brown",
+      "categoria": "thriller",
+      "preu": 12.5,
+      "imatge": "img23.jpg",
+      "popular": true,
+      "stock": 5
+    },
+    {
+      "id": 24,
+      "nom": "El codi Da Vinci",
+      "descripcio": "Conspiracions religioses",
+      "categoria": "thriller",
+      "preu": 11.5,
+      "imatge": "img24.jpg",
+      "popular": true,
+      "stock": 7
+    },
+    {
+      "id": 25,
+      "nom": "La sombra del viento",
+      "descripcio": "Novel·la ambientada a Barcelona",
+      "categoria": "novel·la",
+      "preu": 14.0,
+      "imatge": "img25.jpg",
+      "popular": true,
+      "stock": 6
+    },
+    {
+      "id": 26,
+      "nom": "Sapiens",
+      "descripcio": "Història de la humanitat",
+      "categoria": "assaig",
+      "preu": 16.0,
+      "imatge": "img26.jpg",
+      "popular": true,
+      "stock": 4
+    },
+
+    {
+      "id": 27,
+      "nom": "Homo Deus",
+      "descripcio": "Futur de la humanitat",
+      "categoria": "assaig",
+      "preu": 15.0,
+      "imatge": "img27.jpg",
+      "popular": false,
+      "stock": 5
+    },
+    {
+      "id": 28,
+      "nom": "El alquimista",
+      "descripcio": "Reflexió espiritual",
+      "categoria": "novel·la",
+      "preu": 10.0,
+      "imatge": "img28.jpg",
+      "popular": true,
+      "stock": 9
+    },
+    {
+      "id": 29,
+      "nom": "Los pilares de la tierra",
+      "descripcio": "Novel·la històrica",
+      "categoria": "històric",
+      "preu": 18.0,
+      "imatge": "img29.jpg",
+      "popular": true,
+      "stock": 3
+    },
+    {
+      "id": 30,
+      "nom": "Un mundo sin fin",
+      "descripcio": "Seqüela històrica",
+      "categoria": "històric",
+      "preu": 17.5,
+      "imatge": "img30.jpg",
+      "popular": false,
+      "stock": 4
+    },
+    {
+      "id": 31,
+      "nom": "El código del dinero",
+      "descripcio": "Finances personals",
+      "categoria": "economia",
+      "preu": 12.0,
+      "imatge": "img31.jpg",
+      "popular": false,
+      "stock": 6
+    },
+
+    {
+      "id": 32,
+      "nom": "Padre rico padre pobre",
+      "descripcio": "Educació financera",
+      "categoria": "economia",
+      "preu": 11.0,
+      "imatge": "img32.jpg",
+      "popular": true,
+      "stock": 8
+    },
+    {
+      "id": 33,
+      "nom": "Atomic Habits",
+      "descripcio": "Hàbits i productivitat",
+      "categoria": "autoajuda",
+      "preu": 13.0,
+      "imatge": "img33.jpg",
+      "popular": true,
+      "stock": 7
+    },
+    {
+      "id": 34,
+      "nom": "El poder del ahora",
+      "descripcio": "Mindfulness",
+      "categoria": "autoajuda",
+      "preu": 12.0,
+      "imatge": "img34.jpg",
+      "popular": false,
+      "stock": 6
+    },
+    {
+      "id": 35,
+      "nom": "Mindset",
+      "descripcio": "Psicologia del creixement",
+      "categoria": "psicologia",
+      "preu": 14.0,
+      "imatge": "img35.jpg",
+      "popular": true,
+      "stock": 5
+    },
+    {
+      "id": 36,
+      "nom": "Thinking, Fast and Slow",
+      "descripcio": "Psicologia cognitiva",
+      "categoria": "psicologia",
+      "preu": 15.0,
+      "imatge": "img36.jpg",
+      "popular": false,
+      "stock": 4
+    },
+
+    {
+      "id": 37,
+      "nom": "Clean Code",
+      "descripcio": "Bones pràctiques de programació",
+      "categoria": "tecnologia",
+      "preu": 25.0,
+      "imatge": "img37.jpg",
+      "popular": true,
+      "stock": 3
+    },
+    {
+      "id": 38,
+      "nom": "The Pragmatic Programmer",
+      "descripcio": "Desenvolupament software",
+      "categoria": "tecnologia",
+      "preu": 24.0,
+      "imatge": "img38.jpg",
+      "popular": true,
+      "stock": 2
+    },
+    {
+      "id": 39,
+      "nom": "JavaScript: The Good Parts",
+      "descripcio": "Guia JS essencial",
+      "categoria": "tecnologia",
+      "preu": 20.0,
+      "imatge": "img39.jpg",
+      "popular": false,
+      "stock": 5
+    },
+    {
+      "id": 40,
+      "nom": "Eloquent JavaScript",
+      "descripcio": "Aprendre JavaScript",
+      "categoria": "tecnologia",
+      "preu": 19.0,
+      "imatge": "img40.jpg",
+      "popular": true,
+      "stock": 6
+    },
+    {
+      "id": 41,
+      "nom": "You Don't Know JS",
+      "descripcio": "Deep dive JS",
+      "categoria": "tecnologia",
+      "preu": 21.0,
+      "imatge": "img41.jpg",
+      "popular": false,
+      "stock": 4
+    },
+
+    {
+      "id": 42,
+      "nom": "Harry Potter i la pedra filosofal",
+      "descripcio": "Fantasia juvenil",
+      "categoria": "fantasia",
+      "preu": 12.0,
+      "imatge": "img42.jpg",
+      "popular": true,
+      "stock": 10
+    },
+    {
+      "id": 43,
+      "nom": "Harry Potter i la cambra secreta",
+      "descripcio": "Segona part HP",
+      "categoria": "fantasia",
+      "preu": 12.0,
+      "imatge": "img43.jpg",
+      "popular": true,
+      "stock": 9
+    },
+    {
+      "id": 44,
+      "nom": "Harry Potter i el pres d'Azkaban",
+      "descripcio": "Tercera part HP",
+      "categoria": "fantasia",
+      "preu": 13.0,
+      "imatge": "img44.jpg",
+      "popular": true,
+      "stock": 8
+    },
+    {
+      "id": 45,
+      "nom": "Harry Potter i el calze de foc",
+      "descripcio": "Quart llibre HP",
+      "categoria": "fantasia",
+      "preu": 14.0,
+      "imatge": "img45.jpg",
+      "popular": true,
+      "stock": 7
+    },
+    {
+      "id": 46,
+      "nom": "Harry Potter i l'ordre del fènix",
+      "descripcio": "Cinquè llibre HP",
+      "categoria": "fantasia",
+      "preu": 15.0,
+      "imatge": "img46.jpg",
+      "popular": false,
+      "stock": 6
+    },
+
+    {
+      "id": 47,
+      "nom": "Harry Potter i el misteri del príncep",
+      "descripcio": "Sisè llibre HP",
+      "categoria": "fantasia",
+      "preu": 15.0,
+      "imatge": "img47.jpg",
+      "popular": false,
+      "stock": 5
+    },
+    {
+      "id": 48,
+      "nom": "Harry Potter i les relíquies de la mort",
+      "descripcio": "Final de la saga",
+      "categoria": "fantasia",
+      "preu": 16.0,
+      "imatge": "img48.jpg",
+      "popular": true,
+      "stock": 4
+    },
+    {
+      "id": 49,
+      "nom": "Dune",
+      "descripcio": "Ciència ficció èpica",
+      "categoria": "sci-fi",
+      "preu": 18.0,
+      "imatge": "img49.jpg",
+      "popular": true,
+      "stock": 6
+    },
+    {
+      "id": 50,
+      "nom": "Fundació",
+      "descripcio": "Saga de ciència ficció",
+      "categoria": "sci-fi",
+      "preu": 17.0,
+      "imatge": "img50.jpg",
       "popular": false,
       "stock": 5
     }

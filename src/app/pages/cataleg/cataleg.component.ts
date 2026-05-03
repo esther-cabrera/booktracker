@@ -4,16 +4,16 @@ import { TargetaElementComponent } from '../../components/targeta-element/target
 import { ElementService } from '../../services/element.service';
 import { FormulariCercaComponent } from '../../components/formulari-cerca/formulari-cerca.component';
 import { PreferitsService } from '../../services/preferits.service';
-import { PreferitsPanelComponent } from '../../components/preferits-panel/preferits-panel.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @Component({
   selector: 'app-llista-elements',
   standalone: true,
   imports: [
     CommonModule,
+    ScrollingModule,
     TargetaElementComponent,
     FormulariCercaComponent,
-    PreferitsPanelComponent,
   ],
   templateUrl: './cataleg.component.html',
 })

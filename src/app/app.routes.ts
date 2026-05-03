@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { CatalegComponent } from './pages/cataleg/cataleg.component';
 import { CercaComponent } from './pages/cerca/cerca.component';
 import { DetallComponent } from './pages/detall/detall.component';
-import { PreferitsPanelComponent } from './components/preferits-panel/preferits-panel.component';
 import { LoginComponent } from './pages/login/login.component';
 import { authGuard } from './guards/auth.guard';
 
@@ -13,7 +12,10 @@ export const routes: Routes = [
   { path: 'cerca', component: CercaComponent },
   {
     path: 'preferits',
-    component: PreferitsPanelComponent,
+    loadComponent: () =>
+      import('./components/preferits-panel/preferits-panel.component').then(
+        (m) => m.PreferitsPanelComponent,
+      ),
     canActivate: [authGuard],
   },
   { path: 'login', component: LoginComponent },

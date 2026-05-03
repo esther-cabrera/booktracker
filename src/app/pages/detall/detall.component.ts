@@ -1,10 +1,11 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detall',
   standalone: true,
   template: `<p>ID: {{ id }}</p>`,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DetallComponent {
   private route = inject(ActivatedRoute);
